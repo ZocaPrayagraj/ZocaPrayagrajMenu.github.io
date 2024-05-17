@@ -2,6 +2,7 @@ h1{
 font-family: Agency FB;
 text-align:center;
 font-size: xxx-large;
+margin-bottom: 0px;
 }
 h2{
 font-family: Agency FB;
@@ -15,4 +16,11 @@ font-size:medium;
 margin-top: 0px;
 padding-right:30px;
 margin-bottom: 0px;
+}
+.container
+{
+position : relative;
+overflow:hidden;
+aspect-ratio: 5/2.5;
+
 }
