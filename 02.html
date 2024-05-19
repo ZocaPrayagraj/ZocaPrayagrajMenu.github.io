@@ -51,6 +51,18 @@ background-image: url('Background.jpg');
   padding: 10px 0;
   height: 150px;
 }
+
+#captionB {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc; 
+  padding: 10px 0;
+  height: 150px;
+}
+	
 /* Add Animation */
 .modal-content, #caption {  
   -webkit-animation-name: zoom;
@@ -116,7 +128,7 @@ background-image: url('Background.jpg');
 <td>
 <table style="padding-left:10%; position: relative;">
 <tr>
-<td><h2><div id="link" onclick="myFunction(this,'pics/espresso.png')" >Espresso</div></h2></td>
+<td><h2><div id="link" onclick="myFunction(this,'pics/espresso.png','Espresso','Espresso Description')" >Espresso</div></h2></td>
 <td><h2> 99₹</h2></td>
 </tr>
 <tr>
@@ -125,7 +137,7 @@ background-image: url('Background.jpg');
 </tr>
 
 <tr>
-<td><h2><div id="link" onclick="myFunction(this,'pics/regular_coffee.png')">Regular Coffee</div></h2></td>
+<td><h2><div id="link" onclick="myFunction(this,'pics/regular_coffee.png','Regular Coffee','Regular Coffee Description')">Regular Coffee</div></h2></td>
 <td><h2> 79₹</h2></td>
 </tr>
 <tr>
@@ -135,7 +147,7 @@ background-image: url('Background.jpg');
 	
 
 <tr>
-<td><h2><div id="link" onclick="myFunction(this,'pics/cappuccino.png')">Cappuccino</div></h2></td>
+<td><h2><div id="link" onclick="myFunction(this,'pics/cappuccino.png','Cappuccino','Cappuccino Description')">Cappuccino</div></h2></td>
 <td><h2>129₹</h2></td>
 </tr>
 <tr>
@@ -214,6 +226,7 @@ background-image: url('Background.jpg');
 <div id="myModal" class="modal">
   <span class="close">&times;</span>
   <div id="caption" style="height:10%;"></div>
+  <div id="captionB" style="height:10%;"></div>
   <img class="modal-content" id="img01" style="height:60%" >
   
 </div>
@@ -227,14 +240,15 @@ var modal = document.getElementById("myModal");
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var modalImg = document.getElementById("img01");  
 var captionText = document.getElementById("caption");
+var captionBody = document.getElementById("captionB");
 
-
-function myFunction(element,addr)
+function myFunction(element,addr,caphead,capbody)
 {
 
 modal.style.display = "block";
 modalImg.src = addr;
-captionText.innerHTML = addr;
+captionText.innerHTML = caphead;
+captionBody.innerHTML = capbody;
 }
 
 
