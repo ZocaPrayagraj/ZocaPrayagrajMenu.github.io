@@ -22,5 +22,5 @@ margin-bottom: 0px;
 position : relative;
 max-width:100%;
 aspect-ratio: 4/3.5;
-
+width=device-width;
 }
