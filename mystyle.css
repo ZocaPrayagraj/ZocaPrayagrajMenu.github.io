@@ -1,33 +1,35 @@
 h1{
 font-family: Agency FB;
 text-align:center;
-font-size: xxx-large;
+font-size: 7vh;
 margin-bottom: 0px;
 }
 h2{
 font-family: Agency FB;
-font-size: x-large;
+font-size: 4vh;
 margin-top: 0px;
 margin-bottom: 0px;
 }
 h3{
 font-family: Agency FB;
-font-size:medium;
+font-size:2vh;
 margin-top: 0px;
 padding-right:30px;
 margin-bottom: 0px;
 }
+
 h4{
 font-family: Agency FB;
-font-size: x-large;
+font-size: 4vh;
 margin-top: 0px;
 margin-bottom: 0px;
 float: right;
 }
+
 .container
 {
-position : relative;
-max-width:100%;
-width=device-width;
-aspect-ratio: 4/3.5; 
+ position : relative;
+ max-width:100%;
+ width=device-width; 
+ aspect-ratio: 4/3.5; 
 }
