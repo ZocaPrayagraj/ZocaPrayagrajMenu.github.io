@@ -124,7 +124,7 @@ background-image: url('Background.jpg');
   */
   transform: translate(0, -50%);">   
 <tr>
-<td><h1>HOT COFFEE 1</h1></td>
+<td><h1>HOT COFFEE</h1></td>
 <td></td>
 </tr>
 <tr>
@@ -134,7 +134,7 @@ background-image: url('Background.jpg');
 <table style="padding-left:10%; position: relative;">
 <tr>
 <td><h2><div id="link" onclick="myFunction(this,'pics/espresso.png','ESPRESSO','A 30ml shot of concentrated black coffee')" >Espresso</div></h2></td>
-<td><h2> 99₹</h2></td>
+<td><h4> 99₹</h4></td>
 </tr>
 <tr>
 <td><h3>A 30ml shot of concentrated black coffee </h3></td>
@@ -143,7 +143,7 @@ background-image: url('Background.jpg');
 
 <tr>
 <td><h2><div id="link" onclick="myFunction(this,'pics/regular_coffee.png','REGULAR COFFEE','Hot milk coffee made from instant coffee')">Regular Coffee</div></h2></td>
-<td><h2> 79₹</h2></td>
+<td><h4> 79₹</h4></td>
 </tr>
 <tr>
 <td><h3>Hot milk coffee made from instant coffee</h3></td>
@@ -153,7 +153,7 @@ background-image: url('Background.jpg');
 
 <tr>
 <td><h2><div id="link" onclick="myFunction(this,'pics/cappuccino.png','Cappuccino','Cappuccino Description')">Cappuccino</div></h2></td>
-<td><h2>129₹</h2></td>
+<td><h4>129₹</h4></td>
 </tr>
 <tr>
 <td><h3>Espresso shot mixed with steamed milk and milk foam</h3></td>
@@ -162,7 +162,7 @@ background-image: url('Background.jpg');
 
 <tr>
 <td><h2><div id="link" onclick="myFunction(this,'pics/cold_coffee.png','Cappuccino','Cappuccino Description')">Mocha</div></h2></td>
-<td><h2>139₹</h2></td>
+<td><h4>139₹</h4></td>
 </tr>
 <tr>
 <td><h3>Espresso shot mixed with steamed milk and chocolate sauce</h3></td>
@@ -171,7 +171,7 @@ background-image: url('Background.jpg');
 
 <tr>
 <td><h2><div id="link" onclick="myFunction(this,'pics/cold_coffee1.png','Cappuccino','Cappuccino Description')">Macchiato</div></h2></td>
-<td><h2>119₹</h2></td>
+<td><h4>119₹</h4></td>
 </tr>
 <tr>
 <td><h3>Espresso stained with a dollop of frothed milk served in a small espresso cup</h3></td>
@@ -180,7 +180,7 @@ background-image: url('Background.jpg');
 
 <tr>
 <td><h2>Latte</h2></td>
-<td><h2>139₹</h2></td>
+<td><h4>139₹</h4></td>
 </tr>
 <tr>
 <td><h3>A cappuccino with more of steamed milk resulting in milder coffee flavour</h3></td>
@@ -189,7 +189,7 @@ background-image: url('Background.jpg');
 
 <tr>
 <td><h2>Americano</h2></td>
-<td><h2>109₹</h2></td>
+<td><h4>109₹</h4></td>
 </tr>
 <tr>
 <td><h3>Espresso diluted with hot water</h3></td>
@@ -198,7 +198,7 @@ background-image: url('Background.jpg');
 
 <tr>
 <td><h2>Vanilla Latte</h2></td>
-<td><h2>149₹</h2></td>
+<td><h4>149₹</h4></td>
 </tr>
 <tr>
 <td><h3>Vanilla flavoured latte</h3></td>
@@ -207,7 +207,7 @@ background-image: url('Background.jpg');
 
 <tr>
 <td><h2>Affogato</h2></td>
-<td><h2>139₹</h2></td>
+<td><h4>139₹</h4></td>
 </tr>
 <tr>
 <td><h3>Espresso poured over a scoop of vanilla ice cream</h3></td>
@@ -216,7 +216,7 @@ background-image: url('Background.jpg');
 
 <tr>
 <td><h2>Hazelnut Mocha</h2></td>
-<td><h2>149₹</h2></td>
+<td><h4>149₹</h4></td>
 </tr>
 <tr>
 <td><h3>Mocha mixed with hazelnut syrup</h3></td>
@@ -262,7 +262,10 @@ var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() { 
-  modal.style.display = "none";
+modal.style.display = "none";
+}
+modal.onclick = function() {
+modal.style.display = "none";
 }
 </script>
 
