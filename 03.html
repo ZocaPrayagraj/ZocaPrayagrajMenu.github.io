@@ -12,6 +12,13 @@ background-image: url('Background.jpg');
   background-size: cover;
 }
 
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:auto;
+  margin-bottom:auto;
+}
+
 #link {
   border-radius: 5px;
   cursor: pointer;
@@ -116,125 +123,115 @@ background-image: url('Background.jpg');
 
 <BODY>
 
-<table style="
-    width:100%;
-    max-height:100%; 
+<table style="display: block;
+    width:90%;
+    max-height:100%;
     position: absolute;
     top: 50%;
     left: 50%;
     padding-left:5%; 
     padding-right:5%;
-    transform: translateX(-50%) translateY(-50%);">     
+    transform: translateX(-50%) translateY(-50%);
+">     
 <tr>
-<td><h1>SHAKES</h1></td>
+<td><h1>HOT COFFEE</h1></td>
 <td><div style="text-align: center;font-size:2vh;font-family: Agency FB;"> [NOTE : CLICK ON THE ITEM NAME TO VIEW DETAILS] </div></td>
 </tr>
 <tr>
-<td style = "width:30%;"><img src="shakes/shakes.png" alt="Shakes" align = "center"  >
+<td style = "width:35.5%;"><img src="hot_coffee/hot_coffee.png" alt="Hot Coffee" class = "center"  >
 </td>
 <td>
-<table style="padding-left:10%; position: relative;width:95%;">
+<table style="padding-left:10%; position:relative;width:95%;">
 <tr>
-<td><h2><div id="link" onclick="myFunction(this,'shakes/vanilla_shake.png','VANILLA SHAKE','Vanilla flavoured thick milkshake')">Vanilla Shake</div></h2></td>
-<td><h4>279₹</h4></td>
+<td><h2><div id="link" onclick="myFunction(this,'hot_coffee/espresso.png','ESPRESSO','A 30ml shot of concentrated black coffee')" >Espresso</div></h2></td>
+<td><h4> 99₹</h4></td>
 </tr>
 <tr>
-<td><h3>Vanilla flavoured thick milkshake</h3></td>
+<td><h3>A 30ml shot of concentrated black coffee </h3></td>
 <td></td>
 </tr>
 
 <tr>
-<td><h2><div id="link" onclick="myFunction(this,'shakes/mango_shake.png','MANGO SHAKE','Mango flavoured thick milkshake')" >Mango Shake</div></h2></td>
-<td><h4>279₹</h4></td>
+<td><h2><div id="link" onclick="myFunction(this,'hot_coffee/regular_coffee.png','REGULAR COFFEE','Hot milk coffee made from instant coffee')">Regular Coffee</div></h2></td>
+<td><h4> 79₹</h4></td>
 </tr>
 <tr>
-<td><h3>Mango flavoured thick milkshake</h3></td>
+<td><h3>Hot milk coffee made from instant coffee</h3></td>
 <td></td>
 </tr>
 	
 
 <tr>
-<td><h2><div id="link" onclick="myFunction(this,'shakes/chocolate_shake.png','CHOCOLATE SHAKE','Chocolate flavoured thick milkshake')" >Chocolate Shake</div></h2></td>
-<td><h4>279₹</h4></td>
+<td><h2><div id="link" onclick="myFunction(this,'hot_coffee/cappuccino.png','CAPPUCCINO','Espresso shot mixed with steamed milk and milk foam')">Cappuccino</div></h2></td>
+<td><h4>129₹</h4></td>
 </tr>
 <tr>
-<td><h3>Chocolate flavoured thick milkshake</h3></td>
+<td><h3>Espresso shot mixed with steamed milk and milk foam</h3></td>
 <td></td>
 </tr>
 
 <tr>
-<td><h2><div id="link" onclick="myFunction(this,'shakes/blueberry_shake.png','BLUEBERRY SHAKE','Blueberry flavoured thick milkshake')" >Blueberry Shake</div></h2></td>
-<td><h4>279₹</h4></td>
+<td><h2><div id="link" onclick="myFunction(this,'hot_coffee/mocha.png','MOCHA','Espresso shot mixed with steamed milk and chocolate sauce')">Mocha</div></h2></td>
+<td><h4>139₹</h4></td>
 </tr>
 <tr>
-<td><h3>Blueberry flavoured thick milkshake</h3></td>
-<td></td>
-</tr>
-
-
-<tr>
-<td><h2><div id="link" onclick="myFunction(this,'shakes/strawberry_shake.png','STRAWBERRY SHAKE','Strawberry flavoured thick milkshake')" >Strawberry Shake</div></h2></td>
-<td><h4>279₹</h4></td>
-</tr>
-<tr>
-<td><h3>Strawberry flavoured thick milkshake</h3></td>
+<td><h3>Espresso shot mixed with steamed milk and chocolate sauce</h3></td>
 <td></td>
 </tr>
 
 <tr>
-<td><h2><div id="link" onclick="myFunction(this,'shakes/banana_shake.png','BANANA SHAKE','Banana flavoured thick milkshake')" >Banana Shake</div></h2></td>
-<td><h4>279₹</h4></td>
+<td><h2><div id="link" onclick="myFunction(this,'hot_coffee/macchiato.png','MACCHIATO','Espresso stained with a dollop of frothed milk served in a small espresso cup')">Macchiato</div></h2></td>
+<td><h4>119₹</h4></td>
 </tr>
 <tr>
-<td><h3>Banana flavoured thick milkshake</h3></td>
+<td><h3>Espresso stained with a dollop of frothed milk served in a small espresso cup</h3></td>
 <td></td>
 </tr>
 
 <tr>
-<td><h2><div id="link" onclick="myFunction(this,'shakes/raspberry_shake.png','RASPBERRY SHAKE','Raspberry flavoured thick milkshake')" >Raspberry Shake</div></h2></td>
-<td><h4>279₹</h4></td>
+<td><h2><div id="link" onclick="myFunction(this,'hot_coffee/latte.png','LATTE','A cappuccino with more of steamed milk resulting in milder coffee flavour')">Latte</div></h2></td>
+<td><h4>139₹</h4></td>
 </tr>
 <tr>
-<td><h3>Raspberry flavoured thick milkshake</h3></td>
+<td><h3>A cappuccino with more of steamed milk resulting in milder coffee flavour</h3></td>
 <td></td>
 </tr>
 
 <tr>
-<td><h2><div id="link" onclick="myFunction(this,'shakes/kiwi_shake.png','KIWI SHAKE','Kiwi flavoured thick milkshake')" >Kiwi Shake</div></h2></td>
-<td><h4>279₹</h4></td>
+<td><h2><div id="link" onclick="myFunction(this,'hot_coffee/americano.png','AMERICANO','Espresso diluted with hot water')">Americano</div></h2></td>
+<td><h4>109₹</h4></td>
 </tr>
 <tr>
-<td><h3>Kiwi flavoured thick milkshake</h3></td>
+<td><h3>Espresso diluted with hot water</h3></td>
 <td></td>
 </tr>
 
 <tr>
-<td><h2><div id="link" onclick="myFunction(this,'shakes/pineapple_shake.png','PINEAPPLE SHAKE','Pineapple flavoured thick milkshake')" >Pineapple Shake</div></h2></td>
-<td><h4>279₹</h4></td>
+<td><h2><div id="link" onclick="myFunction(this,'hot_coffee/latte.png','VANILLA LATTE','Vanilla flavoured latte')">Vanilla Latte</div></h2></td>
+<td><h4>149₹</h4></td>
 </tr>
 <tr>
-<td><h3>Pineapple flavoured thick milkshake</h3></td>
+<td><h3>Vanilla flavoured latte</h3></td>
 <td></td>
 </tr>
 
 <tr>
-<td><h2><div id="link" onclick="myFunction(this,'shakes/passionfruit_shake.png','PASSION FRUIT SHAKE','Passion Fruit flavoured thick milkshake')" >Passion Fruit Shake</div></h2></td>
-<td><h4>279₹</h4></td>
+<td><h2><div id="link" onclick="myFunction(this,'hot_coffee/affogato.png','AFFOGATO','Espresso poured over a scoop of vanilla ice cream')">Affogato</div></h2></td>
+<td><h4>139₹</h4></td>
 </tr>
 <tr>
-<td><h3>Passion Fruit flavoured thick milkshake</h3></td>
+<td><h3>Espresso poured over a scoop of vanilla ice cream</h3></td>
 <td></td>
 </tr>
 
 <tr>
-<td><h2><div id="link" onclick="myFunction(this,'shakes/yuzufruit_shake.png','YUZU FRUIT SHAKE','Yuzu Fruit flavoured thick milkshake')" >Yuzu Fruit Shake</div></h2></td>
-<td><h4>279₹</h4></td>
+<td><h2><div id="link" onclick="myFunction(this,'hot_coffee/mocha.png','HAZELNUT MOCHA','Mocha mixed with hazelnut syrup')">Hazelnut Mocha</div></h2></td>
+<td><h4>149₹</h4></td>
 </tr>
 <tr>
-<td><h3>Yuzu Fruit flavoured thick milkshake</h3></td>
+<td><h3>Mocha mixed with hazelnut syrup</h3></td>
 <td></td>
 </tr>
-
 </table>
 </td>
 </tr>
