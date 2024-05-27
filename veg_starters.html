@@ -1,0 +1,275 @@
+<HTML>
+<link rel="stylesheet" href="mystyle.css">
+<HEAD>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<STYLE>
+
+BODY
+{
+background-image: url('Background.jpg');
+ background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height:500;
+}
+
+#link {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#link:hover {opacity: 0.5;}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;  /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: none; /* Enable scroll if needed */  /* 
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+ /* width: 80%; */
+  object-fit: contain;
+  max-width: 700px;
+}
+/* Caption of Modal Image */
+#caption {
+  font-family: Agency FB;
+  margin: auto;
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: white; 
+/*  padding: 10px 0; */
+ /* height: 150px; */
+  font-size: 10.2vh;
+}
+
+#captionB {
+  font-family: Agency FB;
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;  
+  font-size: 4.2vh;
+ /* padding: 10px 0; 
+  height: 150px; */
+}
+	
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 100px;   
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+</STYLE>
+</HEAD>
+<TITLE>VEGETARIAN STARTERS</TITLE>
+
+
+<BODY>
+
+<table style="display: block;
+    max-width:100%;
+    max-height:100%; 
+    position: relative;
+    top: 50%;
+    left: 50%;
+    padding-right:5%;
+    transform: translateX(-50%) translateY(-50%);">     
+<tr>
+<td><h1>VEGETARIAN STARTERS</h1></td>
+<td><div style="text-align: center;font-size:2vh;font-family: Agency FB;"> [NOTE : CLICK ON THE ITEM NAME TO VIEW DETAILS] </div></td>
+</tr>
+<tr>
+<td style = "width:45%;"><img src="veg_starters/veg_starters.png" alt="Vegetarian Starters" class = "center"  >
+</td>
+<td style = "width:45%;">
+<table style="padding-left:5%; position: relative;">
+
+<tr>
+<td><h2><div id="link" onclick="myFunction(this,'veg_starters/veg_starters.png','PANEER MAKHNI FONDUE','Grilled Cottage Cheese served with creamy rich makhni gravy')">Paneer Makhni Fondue</div></h2></td>
+<td><h4>299₹</h4></td>
+</tr>
+<tr>
+<td><h3>Grilled Cottage Cheese served with creamy rich makhni gravy</h3></td>
+<td></td>
+</tr>
+
+<tr>
+<td><h2><div id="link" onclick="myFunction(this,'veg_starters/veg_starters.png','DAL MAKHNI FONDUE','Skewered rolled parathas served with dal makhni to dunk in')">Dal Makhni Fondue</div></h2></td>
+<td><h4>299₹</h4></td>
+</tr>
+<tr>
+<td><h3>Skewered rolled parathas served with dal makhni to dunk in</h3></td>
+<td></td>
+</tr>
+	
+
+<tr>
+<td><h2><div id="link" onclick="myFunction(this,'veg_starters/veg_starters.png','CHEESE GARLIC BREAD','Toasted bread topped with garlic butter, cheese & gratinated ')">Cheese Garlic Bread</div></h2></td>
+<td><h4>179₹</h4></td>
+</tr>
+<tr>
+<td><h3>Toasted bread topped with garlic butter, cheese & gratinated </h3></td>
+<td></td>
+</tr>
+
+<tr>
+<td><h2><div id="link" onclick="myFunction(this,'veg_starters/veg_starters.png','MOZZARELLA STICKS','Crumb fried mozzarella battons deep fried till golden crisp')">Mozzarella Sticks</div></h2></td>
+<td><h4>249₹</h4></td>
+</tr>
+<tr>
+<td><h3>Crumb fried mozzarella battons deep fried till golden crisp</h3></td>
+<td></td>
+</tr>
+
+
+<tr>
+<td><h2><div id="link" onclick="myFunction(this,'veg_starters/veg_starters.png','VEGETABLE FLAUTAS','Deep fried tortilla roll served with salsa & sour cream')">Vegetable Flautas</div></h2></td>
+<td><h4>249₹</h4></td>
+</tr>
+<tr>
+<td><h3>Deep fried tortilla roll served with salsa & sour cream</h3></td>
+<td></td>
+</tr>
+
+<tr>
+<td><h2><div id="link" onclick="myFunction(this,'veg_starters/veg_starters.png','HUMMUS PITA','Chickpea dip served with leavened Mediterranean bread')">Hummus Pita</div></h2></td>
+<td><h4>349₹</h4></td>
+</tr>
+<tr>
+<td><h3>Chickpea dip served with leavened Mediterranean bread</h3></td>
+<td></td>
+</tr>
+
+<tr>
+<td><h2><div id="link" onclick="myFunction(this,'veg_starters/veg_starters.png','DRAGON CHEESE BALLS','Cheese balls coated with shreads of wonton sheets & deep fried till golden crisp')">Dragon Cheese Balls</div></h2></td>
+<td><h4>269₹</h4></td>
+</tr>
+<tr>
+<td><h3>Cheese balls coated with shreads of wonton sheets & deep fried till golden crisp</h3></td>
+<td></td>
+</tr>
+
+<tr>
+<td><h2><div id="link" onclick="myFunction(this,'veg_starters/veg_starters.png','GALAOTI KEBAB','Melt in mouth veg kebab')">Galaoti Kebab</div></h2></td>
+<td><h4>299₹</h4></td>
+</tr>
+<tr>
+<td><h3>Melt in mouth veg kebab</h3></td>
+<td></td>
+</tr>
+
+<tr>
+<td><h2><div id="link" onclick="myFunction(this,'veg_starters/veg_starters.png','VEG. KOTHE','Loaded with lots of flavour, sweetness and glaze of honey, tanginess of sauce and hotness of chilli and garlic')">Veg. Kothe</div></h2></td>
+<td><h4>279₹</h4></td>
+</tr>
+<tr>
+<td><h3>Loaded with lots of flavour, sweetness and glaze of honey, tanginess of sauce and hotness of chilli and garlic</h3></td>
+<td></td>
+</tr>
+
+
+
+</table>
+</td>
+</tr>
+</table>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <div id="caption" style="height:10%;"></div> <br>
+  <div id="captionB" style="height:10%;"></div> <br>
+  <img class="modal-content" id="img01" style="height:60%" >
+  
+</div>
+
+</BODY>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var modalImg = document.getElementById("img01");  
+var captionText = document.getElementById("caption");
+var captionBody = document.getElementById("captionB");
+
+function myFunction(element,addr,caphead,capbody)
+{
+
+modal.style.display = "block";
+modalImg.src = addr;
+captionText.innerHTML = caphead;
+captionBody.innerHTML = capbody;
+}
+
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+modal.style.display = "none";
+}
+modal.onclick = function() {
+modal.style.display = "none";
+}
+</script>
+
+</HTML>
