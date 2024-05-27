@@ -1,0 +1,257 @@
+<HTML>
+<link rel="stylesheet" href="mystyle.css">
+<HEAD>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<STYLE>
+
+BODY
+{
+background-image: url('Background.jpg');
+ background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height:500;
+  max-width:500;
+}
+
+#link {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#link:hover {opacity: 0.5;}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;  /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: none; /* Enable scroll if needed */  /* 
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+ /* width: 80%; */
+  object-fit: contain;
+  max-width: 700px;
+}
+/* Caption of Modal Image */
+#caption {
+  font-family: Agency FB;
+  margin: auto;
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: white; 
+/*  padding: 10px 0; */
+ /* height: 150px; */
+  font-size: 10.2vh;
+}
+
+#captionB {
+  font-family: Agency FB;
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;  
+  font-size: 4.2vh;
+ /* padding: 10px 0; 
+  height: 150px; */
+}
+	
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 100px;   
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+</STYLE>
+</HEAD>
+<TITLE>PIZZA</TITLE>
+
+
+<BODY>
+
+<table style="display: block;
+    max-width:100%;
+    max-height:100%; 
+    position: relative;
+    top: 50%;
+    left: 50%;
+    padding-left:5%; 
+    padding-right:5%;
+    transform: translateX(-50%) translateY(-50%);">     
+<tr>
+<td><h1>PIZZA</h1></td>
+<td><div style="text-align: center;font-size:2vh;font-family: Agency FB;"> [NOTE : CLICK ON THE ITEM NAME TO VIEW DETAILS] </div></td>
+</tr>
+<tr>
+<td style = "width:45%;"><img src="pizza/pizza.png" alt="Shakes" class = "center"  >
+</td>
+<td style = "width:45%;">
+<table style="padding-left:10%; position: relative;">
+<tr>
+<td><h2><div id="link" onclick="myFunction(this,'pizza/pizza.png','CLASSIC MARCHERITA PIZZA','Classic Pizza topped with mozzarella cheese')">Classic Margherita Pizza</div></h2></td>
+<td><h4>249₹</h4></td>
+</tr>
+<tr>
+<td><h3>Classic Margherita Pizza</h3></td>
+<td></td>
+</tr>
+
+<tr>
+<td><h2><div id="link" onclick="myFunction(this,'pizza/pizza.png','VEG FARMHOUSE PIZZA','Classic Pizza topped with mozzarella cheese, capsicum,exotic veggies & seasoning')">Veg Farmhouse Pizza </div></h2></td>
+<td><h4>299₹</h4></td>
+</tr>
+<tr>
+<td><h3>Classic Pizza topped with mozzarella cheese, capsicum,exotic veggies & seasoning</h3></td>
+<td></td>
+</tr>
+
+<tr>
+<td><h2><div id="link" onclick="myFunction(this,'pizza/pizza.png','VEG PARADISE','Bell peppers, onion, capsicum, mushrooms with cheese seasoning')">Veg Paradise</div></h2></td>
+<td><h4>359₹</h4></td>
+</tr>
+<tr>
+<td><h3>Bell peppers, onion, capsicum, mushrooms with cheese seasoning</h3></td>
+<td></td>
+</tr>
+
+
+<tr>
+<td><h2><div id="link" onclick="myFunction(this,'pizza/pizza.png','PEPPY PANEER','Pizza diced with cottage cheese, onion, capsicum, cheese and seasoning')">Peppy Paneer</div></h2></td>
+<td><h4>339₹</h4></td>
+</tr>
+<tr>
+<td><h3>Pizza diced with cottage cheese, onion, capsicum, cheese and seasoning
+</h3></td>
+<td></td>
+</tr>
+
+<tr>
+<td><h2><div id="link" onclick="myFunction(this,'pizza/pizza.png','PANEER KURCHAN PIZZA','Desi styled pizza topped with battons of cottage cheese cooked with strips of bellpeppers & onions')">Paneer Kurchan Pizza</div></h2></td>
+<td><h4>369₹</h4></td>
+</tr>
+<tr>
+<td><h3>Desi styled pizza topped with battons of cottage cheese cooked with strips of bellpeppers & onions</h3></td>
+<td></td>
+</tr>
+
+<tr>
+<td><h2><div id="link" onclick="myFunction(this,'pizza/pizza.png','MUSHROOM FLAT BREAD','Oblong pizza generously topped with mushrooms')">Mushroom Flat Bread</div></h2></td>
+<td><h4>399₹</h4></td>
+</tr>
+<tr>
+<td><h3>Oblong pizza generously topped with mushrooms</h3></td>
+<td></td>
+</tr>
+
+<tr>
+<td><h2><div id="link" onclick="myFunction(this,'pizza/pizza.png','PESTO FLAT BREAD','Flat bread smeared with basil pesto & topped with bocconcini, sundried tomatoes & olives')">Pesto flat bread</div></h2></td>
+<td><h4>399₹</h4></td>
+</tr>
+<tr>
+<td><h3>Flat bread smeared with basil pesto & topped with bocconcini, sundried tomatoes & olives</h3></td>
+<td></td>
+</tr>
+	
+
+</table>
+</td>
+</tr>
+</table>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <div id="caption" style="height:10%;"></div> <br>
+  <div id="captionB" style="height:10%;"></div> <br>
+  <img class="modal-content" id="img01" style="height:60%" >
+  
+</div>
+
+</BODY>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var modalImg = document.getElementById("img01");  
+var captionText = document.getElementById("caption");
+var captionBody = document.getElementById("captionB");
+
+function myFunction(element,addr,caphead,capbody)
+{
+
+modal.style.display = "block";
+modalImg.src = addr;
+captionText.innerHTML = caphead;
+captionBody.innerHTML = capbody;
+}
+
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+modal.style.display = "none";
+}
+modal.onclick = function() {
+modal.style.display = "none";
+}
+</script>
+
+</HTML>
