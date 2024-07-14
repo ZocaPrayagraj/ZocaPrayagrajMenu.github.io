@@ -75,6 +75,21 @@ background-image: url('Background.jpg');
  /* padding: 10px 0; 
   height: 150px; */
 }
+
+#captionSH {
+  font-family: Agency FB;
+  margin: auto;
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 80%;
+  max-width: 100%;
+  font-weight: bold;
+  text-align: center;
+/*  padding: 10px 0; */
+ /* height: 150px; */
+  font-size: 6.2vh;
+}
 	
 /* Add Animation */
 .modal-content, #caption {  
@@ -131,17 +146,20 @@ background-image: url('Background.jpg');
     left: 50%;
     transform: translateX(-50%) translateY(-50%);">     
 <tr>
-<td><h1>SOUTH INDIAN</h1></td>
+<h1>SOUTH INDIAN</h1>
 </tr>
 <tr>
-<td><div style="text-align: center;font-size:2vh;font-family: Agency FB;"> [NOTE : CLICK ON THE ITEM NAME TO VIEW DETAILS] </div></td>
-<td></td>
+<div style="text-align: center;font-size:2vh;font-family: Agency FB;"> [NOTE : CLICK ON THE ITEM NAME TO VIEW DETAILS] </div>
 </tr>
 <tr>
 <td style = "width:33%;"><img src="south_indian/pudi_dosa.png" alt="South Indian" class= "center">
 </td>
 <td style = "width:35%;">
 <table style="position: relative;">
+
+<tr>
+<td><div id="captionSH" onclick="myFunction(this,'south_indian/pudi_dosa.png','DAL FRY','Spiced lentils with tampering of cumin, garlic & chillies ')">Dal Fry</div></td>
+</tr>
 
 <tr>
 <td><h2><div id="link" onclick="myFunction(this,'south_indian/pudi_dosa.png','DAL FRY','Spiced lentils with tampering of cumin, garlic & chillies ')">Dal Fry</div></h2></td>
